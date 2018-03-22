@@ -20,6 +20,7 @@ const client = new Snoostorm(reddit);
 
 const streamOpts = {
     subreddit: 'cryptocurrency',
+    // subreddit: 'testingground4bots',
     results: 25
 };
 const comments = client.CommentStream(streamOpts);
@@ -33,5 +34,6 @@ comments.on('comment', (comment) => {
         }, (err, response) => {
             console.log(response.status);
         });
+        comment.reply('Manipulation? Everyone is always talking about that around here.  I wonder a) who specifically is doing this manipulation and b) how I can get in on that action.');
     }
 })
