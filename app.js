@@ -29,7 +29,7 @@ comments.on('comment', (comment) => {
         slack.webhook({
             channel: '#' + slackChannel,
             username: process.env.REDDIT_USER,
-            text: comment.body
+            text: '*' + comment.link_title + '*\n' + comment.body
         }, (err, response) => {
             console.log(response.status);
         });
