@@ -1,0 +1,29 @@
+{
+  "name": "manipulation-bot",
+  "version": "0.0.1",
+  "description": "This is a reddit bot that will attempt to help find the reason people think crypto markets are manipulated",
+  "main": "app.js",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "slack-node": "^0.1.8",
+    "snoostorm": "0.0.5",
+    "snoowrap": "^1.15.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bwobbones/manipulation-bot.git"
+  },
+  "keywords": [
+    "reddit"
+  ],
+  "author": "Greg Lucas-Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bwobbones/manipulation-bot/issues"
+  },
+  "homepage": "https://github.com/bwobbones/manipulation-bot#readme"
+}
