@@ -19,13 +19,13 @@ const reddit = new Snoowrap({
 const client = new Snoostorm(reddit);
 
 const streamOpts = {
-    subreddit: 'all',
+    subreddit: 'cryptocurrency',
     results: 25
 };
 const comments = client.CommentStream(streamOpts);
 
 comments.on('comment', (comment) => {
-    if (comment.body.indexOf('manipulation') !== -1) {
+    if (comment.body.indexOf('manipulation') !== -1 || comment.body.indexOf('manipulate')) {
         slack.webhook({
             channel: '#' + slackChannel,
             username: process.env.REDDIT_USER,
