@@ -25,7 +25,7 @@ const streamOpts = {
 const comments = client.CommentStream(streamOpts);
 
 comments.on('comment', (comment) => {
-    if (comment.body.indexOf('manipulation') !== -1 || comment.body.indexOf('manipulate')) {
+    if (comment.body.indexOf('manipulation') !== -1 || comment.body.indexOf('manipulate') !== -1) {
         slack.webhook({
             channel: '#' + slackChannel,
             username: process.env.REDDIT_USER,
